@@ -85,8 +85,8 @@ print(dim(extent_space_time_df))
 print(extent_space_time_df[, c("August-1980", "August-2023")])
 
 # Export the data frames to CSV
-write.csv(area_space_time_df, "data/sea-ice-regional-area-anomalies.csv")
-write.csv(extent_space_time_df, "data/sea-ice-regional-extent-anomalies.csv")
+# write.csv(area_space_time_df, "data/sea-ice-regional-area-anomalies.csv")
+# write.csv(extent_space_time_df, "data/sea-ice-regional-extent-anomalies.csv")
 
 
 # Visualize data ------------
@@ -233,7 +233,7 @@ locations <- data.frame(
         -85.768872, 73.153283, 126.462445,
         149.296564, -61.379056
     ),
-    EOF_value = EOF1,
+    EOF_value = EOF1_area,
     hjust = c(0.5, 0.5, 0.8, 0.5, 0.5, 0.5, 0.5, 0.3, 0.5, 0.5, 0.5, 0.5, 0.5, 0.3),
     vjust = c(-0.5, -0.5, -0.5, -0.8, -0.7, -0.6, -0.5, -0.5, 1.7, -0.5, -0.5, -0.5, -0.5, -0.5)
 )
